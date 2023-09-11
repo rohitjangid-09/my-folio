@@ -1,0 +1,108 @@
+.top-heading {
+    background-color: var(--dark-brown);
+    padding: 10px 0;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            a {
+                img {
+                    height: 40px;
+                }
+            }
+        }
+
+        .menu {
+            ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                    margin: 0 25px;
+
+
+                    &:first-child a {
+                        color: var(--citrus);
+                    }
+
+                    a {
+                        color: #FFF;
+                        font-family: Syne;
+                        font-size: 18px;
+                        font-weight: 400;
+                        transition: 0.5s all ease;
+
+                        &:hover {
+                            color: var(--citrus);
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        .lets-buttan {
+            a {
+                font-size: 18px;
+                color: #fff;
+                position: relative;
+                z-index: 1;
+                display: inline-block;
+                padding: 11px 10px 9px 10px;
+                background: transparent;
+                border-radius: 23px;
+                transition: .5s;
+
+
+                img {
+                    width: 10px;
+                    vertical-align: middle;
+                    margin: 0 8px;
+                }
+
+                &:hover {
+                    color: #fff;
+                }
+
+                &::before {
+                    content: "";
+                    height: 100%;
+                    width: 0;
+                    background: var(--citrus);
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: -1;
+                    transition: .5s;
+                    border-top-right-radius: 23px;
+                    border-bottom-right-radius: 23px;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                }
+
+                &:hover::before {
+                    width: 100%;
+                }
+
+                &::after {
+                    position: absolute;
+                    height: 42px;
+                    width: 42px;
+                    background: var(--citrus);
+                    border-radius: 50%;
+                    content: "";
+                    left: -10px;
+                    top: 50%;
+                    z-index: -1;
+                    transform: translate(0, -50%);
+                }
+            }
+
+
+        }
+    }
+}

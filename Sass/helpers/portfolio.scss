@@ -1,0 +1,389 @@
+.portfolio {
+    text-align: center;
+
+    h2 {
+        @extend .helvetica;
+        color: var(--citrus);
+        font-size: 40px;
+        font-weight: 700;
+    }
+}
+
+.portfolio-tab {
+    position: relative;
+
+    .projects {
+        h2 {
+            font-size: 65.649px;
+            color: var(--dark-brown);
+            font-weight: 700;
+            rotate: -90deg;
+            margin: auto;
+            position: absolute;
+            left: -305px;
+            top: 56%;
+
+        }
+    }
+
+    .portfolio-tab-all {
+        width: 100%;
+        margin: 100px 0 0;
+
+
+        ul.tabs {
+            margin: auto;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 86%;
+            padding: 5px 0;
+            border-radius: 18px;
+            background-color: var(--dark-brown);
+
+            li {
+                background: none;
+                color: #222;
+                display: inline-block;
+                margin: 22px 5px;
+                cursor: pointer;
+                background-color: transparent;
+
+            }
+        }
+
+        .current span {
+            background: var(--citrus);
+            color: var(--white);
+            padding: 13px 18px;
+            transition: 0.5s all ease;
+            border-radius: 10px;
+        }
+
+
+        span {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            background: transparent;
+            padding: 10px 18px;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 15px;
+        }
+
+        .tab-content.current {
+            display: inherit;
+            margin-top: 40px;
+        }
+
+        .portfolio-box {
+            ul {
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 14px 0;
+
+                    .website-design {
+                        width: 68%;
+                        position: relative;
+                        transition: 0.5s all ease;
+
+                        &:hover {
+
+                            .portfolio-box-ourlay {
+                                display: block;
+                            }
+
+                            .website-design-text {
+                                bottom: 90px;
+                            }
+                        }
+
+                        img {
+                            width: 100%;
+
+                        }
+
+                        .portfolio-box-ourlay {
+                            background: var(--brand-color-rgba);
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            width: 100%;
+                            height: 431px;
+                            border-radius: 17px;
+                            transition: 0.7s all ease;
+                            display: none;
+                        }
+
+
+
+                        .website-design-text {
+                            position: absolute;
+                            left: 20px;
+                            z-index: 99;
+                            bottom: 40px;
+                            transition: 0.7s all ease;
+
+                            h2 {
+                                font-size: 34px;
+                                color: var(--white);
+                                font-weight: 700;
+                            }
+
+                            p {
+                                font-size: 18px;
+                                color: var(--white-ourlay);
+                                font-weight: 400;
+                                width: 677px;
+                                line-height: 25px;
+                                padding-top: 10px;
+                            }
+                        }
+                    }
+
+                    .website-design-top {
+                        position: absolute;
+                        top: 30px;
+                        right: 30px;
+                        background-color: var(--haaf-green);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 70px;
+                        width: 70px;
+                        border-radius: 40px;
+
+                        img {
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+
+                    .graphic-design {
+                        width: 32%;
+                        padding-left: 18px;
+                        position: relative;
+
+                        &:hover {
+
+                            .graphic-design-ourlay {
+                                display: block;
+                            }
+
+                            .uxui-text {
+                                bottom: 90px;
+                            }
+                        }
+
+
+                        .graphic-design-ourlay {
+                            background: var(--brand-color-rgba);
+                            position: absolute;
+                            top: 0;
+                            left: 17px;
+                            bottom: 0;
+                            width: 325px;
+                            height: 433px;
+                            border-radius: 17px;
+                            transition: 0.7s all ease;
+                            display: none;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 433px;
+                        }
+
+                        .uxui-text {
+                            position: absolute;
+                            bottom: 37px;
+                            left: 36px;
+                            z-index: 99;
+                            transition: 0.7s all ease;
+
+                            h2 {
+                                font-size: 34px;
+                                color: var(--white);
+                                font-weight: 700;
+
+                            }
+                        }
+                    }
+
+                    .eousva {
+                        width: 68%;
+                        padding-left: 18px;
+                        position: relative;
+
+                        &:hover {
+
+                            .eousva-ourlay {
+                                display: block;
+                            }
+
+                            .eousva-text {
+                                bottom: 90px;
+                            }
+                        }
+
+                        .eousva-ourlay {
+                            background: var(--brand-color-rgba);
+                            position: absolute;
+                            top: 0;
+                            left: 17px;
+                            bottom: 0;
+                            width: 711px;
+                            height: 421px;
+                            border-radius: 17px;
+                            transition: 0.7s all ease;
+                            display: none;
+                        }
+
+                        img {
+                            width: 100%;
+
+                        }
+
+                        .eousva-text {
+                            position: absolute;
+                            left: 40px;
+                            bottom: 40px;
+                            z-index: 99;
+                            transition: 0.7s all ease;
+
+                            h2 {
+                                font-size: 34px;
+                                color: var(--white);
+                                font-weight: 700;
+                            }
+                        }
+                    }
+
+                    .web-development {
+                        width: 32%;
+                        position: relative;
+
+                        &:hover {
+
+                            .web-development-ourlay {
+                                display: block;
+                            }
+
+                            .web-development-text {
+                                bottom: 90px;
+                            }
+                        }
+
+                        .web-development-ourlay {
+                            background: var(--brand-color-rgba);
+                            position: absolute;
+                            top: 0;
+                            left: 0px;
+                            bottom: 0;
+                            width: 343px;
+                            height: 421px;
+                            border-radius: 17px;
+                            transition: 0.7s all ease;
+                            display: none;
+                        }
+
+                        .web-development-text {
+                            position: absolute;
+                            left: 20px;
+                            bottom: 40px;
+                            z-index: 99;
+                            transition: 0.7s all ease;
+
+                            h2 {
+                                font-size: 34px;
+                                color: var(--white);
+                                font-weight: 700;
+
+                            }
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 420px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .view-buttan {
+        display: flex;
+        align-items: center;
+        padding-top: 60px;
+        justify-content: center;
+
+        a {
+            font-size: 18px;
+            color: #fff;
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            padding: 11px 10px 9px 10px;
+            background: transparent;
+            border-radius: 23px;
+            transition: .5s;
+
+
+            img {
+                width: 10px;
+                vertical-align: middle;
+                margin: 0 8px;
+            }
+
+            &:hover {
+                color: #fff;
+            }
+
+            &::before {
+                content: "";
+                height: 100%;
+                width: 0;
+                background: var(--citrus);
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: -1;
+                transition: .5s;
+                border-top-right-radius: 23px;
+                border-bottom-right-radius: 23px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+
+            &::after {
+                position: absolute;
+                height: 42px;
+                width: 42px;
+                background: var(--citrus);
+                border-radius: 50%;
+                content: "";
+                left: -10px;
+                top: 50%;
+                z-index: -1;
+                transform: translate(0, -50%);
+            }
+        }
+    }
+
+
+
+
+
+}
