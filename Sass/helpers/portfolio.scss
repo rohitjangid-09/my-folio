@@ -1,5 +1,6 @@
 .portfolio {
     text-align: center;
+    margin-top: 100px;
 
     h2 {
         @extend .helvetica;
@@ -28,7 +29,7 @@
 
     .portfolio-tab-all {
         width: 100%;
-        margin: 100px 0 0;
+        margin: 50px 0 0;
 
 
         ul.tabs {

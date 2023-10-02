@@ -16,12 +16,21 @@
         }
 
         .menu {
-            ul {
+            >ul {
                 display: flex;
                 align-items: center;
 
-                li {
+                >li {
                     margin: 0 25px;
+                    position: relative;
+
+                    &:hover {
+                        ul {
+                            visibility: visible;
+                            opacity: 1;
+                            transform: rotateX(0);
+                        }
+                    }
 
 
                     &:first-child a {
@@ -34,16 +43,69 @@
                         font-size: 18px;
                         font-weight: 400;
                         transition: 0.5s all ease;
+                        padding: 0 0 43px;
 
                         &:hover {
                             color: var(--citrus);
                         }
                     }
+
+
+                    ul {
+                        position: absolute;
+                        left: -44px;
+                        top: 53px;
+                        background-color: var(--white);
+                        width: 250px;
+                        flex-direction: column;
+                        visibility: hidden;
+                        border-radius: 5px;
+                        border-top: 4px solid var(--citrus);
+                        border-bottom: 4px solid var(--citrus);
+                        opacity: 0;
+                        transform: translateY(12%);
+                        transition: transform .4s, opacity .1s;
+                        z-index: 9999;
+
+                        li {
+                            a {
+                                display: block;
+                                padding: 15px 20px;
+                                // border-bottom: 1px solid var(--border);
+                                font-size: 16px;
+                                text-align: left;
+                                color: var(--black);
+                                position: relative;
+
+
+                                &:hover {
+                                    // border-color: var(--citrus);
+                                    color: var(--citrus);
+                                    // background-color: var(--dark-brown);
+                                    width: 251px;
+                                    margin-left: 16px;
+
+                                    &::after {
+                                        position: absolute;
+                                        left: 1px;
+                                        top: 15;
+                                        content: "/ /";
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
                 }
 
 
             }
+
+
         }
+
+
 
         .lets-buttan {
             a {

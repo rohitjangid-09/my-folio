@@ -2,6 +2,7 @@
     background-color: var(--dark-brown);
     height: 412px;
     width: 100%;
+    margin-top: 100px;
 
     .footer {
         display: flex;
@@ -121,7 +122,7 @@
                     margin: 10px 0;
 
                     .international {
-                        background-color: transparent;
+                        background-color: var(--dark-brown);
                         color: var(--white);
                         border: none;
                         font-size: 16px;
@@ -131,7 +132,7 @@
                     }
 
                     .language {
-                        background-color: transparent;
+                        background-color: var(--dark-brown);
                         color: var(--white);
                         border: none;
                         font-size: 16px;
